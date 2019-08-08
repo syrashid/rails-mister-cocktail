@@ -12,7 +12,13 @@
 </head>
 
 <body>
-  <%= yield %>
+  <nav class="navbar navbar-light bg-light">
+    <%= link_to "Add Cocktail", new_cocktail_path, class: "btn btn-primary" %>
+    <%= link_to "See All Cocktails", cocktails_path, class: "btn btn-primary" %>
+  </nav>
+  <div class="container">
+    <%= yield %>
+  </div>
   <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
   <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
 </body>
