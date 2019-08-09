@@ -1,5 +1,13 @@
-<%= simple_form_for [@cocktail] do |f| %>
+<div class="row">
+  <div class="container">
+    <h1 class="ml-1">Add a Cocktail</h1>
+    <div class="col-5 p-3 rounded" style="background:white">
+      <%= simple_form_for [@cocktail] do |f| %>
 
-  <%= f.input :name %>
-  <%= f.submit "Submit Cocktail", class: "btn btn-primary" %>
-<% end %>
+      <%= f.input :name, :label_html => { :class => 'form-label' } %>
+      <%= f.submit "Submit Cocktail", class: "btn btn-dark" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+

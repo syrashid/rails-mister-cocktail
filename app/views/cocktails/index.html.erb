@@ -1,9 +1,9 @@
 
-  <div class="row">
-    <% @cocktails.each do |cocktail| %>
-    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-      <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
-    </div>
-    <% end %>
+  <div class="container">
+    <h1><span id="banner-typed-text"></span></h1>
+    <%= link_to "Add Cocktail", new_cocktail_path, class: "btn btn-light btn-lg mt-3" %>
+    <a href="#scroll" class="btn btn-light btn-lg mt-3 ml-3">Our Menu</a>
   </div>
+
+
 

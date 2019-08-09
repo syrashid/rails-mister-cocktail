@@ -1,0 +1,18 @@
+.fixed-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 18rem;
+  margin: 0 5px;
+  img {
+  height: 200px;
+  width: 18rem;
+  object-fit: cover;
+  }
+}
+
+

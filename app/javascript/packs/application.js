@@ -15,6 +15,16 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-console.log('Hello World from Webpacker')
+//= require select2
 
 import 'bootstrap';
+
+import { loadDynamicBannerText } from '../components/banner';
+
+import 'select2/dist/css/select2.css';
+
+import { initSelect2 } from '../components/init_select2';
+
+loadDynamicBannerText();
+initSelect2();
+console.log("JS Completed")
