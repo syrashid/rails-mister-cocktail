@@ -1,12 +1,16 @@
 <div class="row">
   <div class="container">
-    <h1 class="ml-1">Add a Cocktail</h1>
-    <div class="col-5 p-3 rounded" style="background:white">
-      <%= simple_form_for [@cocktail] do |f| %>
-
-      <%= f.input :name, :label_html => { :class => 'form-label' } %>
-      <%= f.submit "Submit Cocktail", class: "btn btn-dark" %>
-      <% end %>
+    <div class="col-5">
+      <div class="d-flex align-items-center justify-content-between">
+        <h1 class="ml-1">Add a Cocktail</h1>
+        <%= link_to "Back Home", cocktails_path, class: "btn btn-light btn-lg" %>
+      </div>
+      <div class="rounded p-3 mt-2" style="background:white">
+        <%= simple_form_for [@cocktail] do |f| %>
+        <%= f.input :name, :label_html => { :class => 'form-label' } %>
+        <%= f.submit "Submit Cocktail", class: "btn btn-dark" %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

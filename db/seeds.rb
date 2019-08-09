@@ -21,8 +21,8 @@ end
 puts ']'
 puts 'Completed Seeding Ingredients'
 
-
 puts 'Seeding Sample Cocktails'
+@tom = Cocktail.create(name: 'Tom Collins')
 Cocktail.create(name: 'Apple Martini')
 Cocktail.create(name: 'Long Island Ice Tea')
 Cocktail.create(name: 'Californication')
@@ -34,10 +34,9 @@ Cocktail.create(name: 'Mai Tai')
 Cocktail.create(name: 'Mojito')
 puts 'Completed Seeding Drinks'
 
-puts 'Pouring you a drink: Tom Collins'
-@tom = Cocktail.create(name: 'Tom Collins')
-puts '🍸'
+puts 'Making you a drink: Tom Collins'
 
+puts '🍸'
 
 @ice = Ingredient.where(name: 'Ice').first
 puts '🥶 Adding Ice'

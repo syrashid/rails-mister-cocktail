@@ -18,13 +18,17 @@
 //= require select2
 
 import 'bootstrap';
-
 import { loadDynamicBannerText } from '../components/banner';
-
 import 'select2/dist/css/select2.css';
-
 import { initSelect2 } from '../components/init_select2';
 
-loadDynamicBannerText();
 initSelect2();
-console.log("JS Completed")
+const textTest = document.getElementById('banner-typed-text')
+if (textTest) {
+  loadDynamicBannerText();
+} else {
+  console.log("No valid text to animate")
+}
+
+
+
